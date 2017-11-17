@@ -1,7 +1,6 @@
 ﻿using Microsoft.WindowsAzure.Storage;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Net;
 
 public class BaseStorage : MonoBehaviour
 {
@@ -13,10 +12,6 @@ public class BaseStorage : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-#if UNITY_ANDROID || UNITY_IOS || UNITY_STANDALONE_OSX
-		ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
-#endif
-
 		_myText = GameObject.Find("DebugText").GetComponent<Text>();
 		StorageAccount = CloudStorageAccount.Parse(ConnectionString);
 	}
