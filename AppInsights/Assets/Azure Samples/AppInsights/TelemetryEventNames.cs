@@ -12,5 +12,7 @@ public static class TelemetryEventNames
     public const string ActiveSceneChanged = "ActiveSceneChanged";
     public const string SceneLoaded = "SceneLoaded";
     public const string SceneUnloaded = "SceneUnloaded";
+    public const string Exception = "Exception";
+    public const string Error = "Exception";
 }
 
