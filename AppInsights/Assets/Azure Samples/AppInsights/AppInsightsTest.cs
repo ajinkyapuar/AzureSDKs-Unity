@@ -9,7 +9,7 @@ using Microsoft.ApplicationInsights;
 public class AppInsightsTest : MonoBehaviour
 {
     private TelemetryClient telemetry;
-    private void Awake()
+    private void Start()
     {
         telemetry = AppInsightsLogger.Instance.Telemetry;
     }
