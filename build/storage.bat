@@ -11,10 +11,10 @@ msbuild %storagedir%\Lib\Unity\Microsoft.WindowsAzure.Storage.Unity.csproj /t:Re
 msbuild %storagedir%\Lib\WindowsRuntime\Microsoft.WindowsAzure.Storage.RT.csproj /t:Rebuild /p:Configuration=Release
 
 REM Copy binaries to sample
-copy /y %storagedir%\Lib\Unity\bin\Release\*.dll %sampledir%\Assets\Plugins
-copy /y %storagedir%\Lib\WindowsRuntime\bin\Release\*.dll %sampledir%\Assets\Plugins\WSA
+copy /y %storagedir%\Lib\Unity\bin\Release\*.dll %sampledir%\Assets\Plugins\Storage
+copy /y %storagedir%\Lib\WindowsRuntime\bin\Release\*.dll %sampledir%\Assets\Plugins\Storage\WSA
 
 REM Package
-%unityexe% -batchmode -projectPath %cd%\%sampledir% -exportPackage Assets %cd%\azure-storage-unity-%version%.unitypackage -quit
+%unityexe% -batchmode -projectPath %cd%\%sampledir% -exportPackage Assets %cd%\..\UnityPackages\azure-storage-unity-%version%.unitypackage -quit
 
 echo "Packaging complete."

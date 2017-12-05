@@ -57,7 +57,6 @@ artifacts/
 *.pdb
 *.pgc
 *.pgd
-*.rsp
 *.sbr
 *.tlb
 *.tli
@@ -292,7 +291,6 @@ __pycache__/
 [Ll]ocal[Cc]ache/
 [Tt]emp/
 [Uu]nityGenerated/
-*.unitypackage
 *.csproj
 *.sln
 # file on crash reports
@@ -302,3 +300,6 @@ sysinfo.txt
 
 #Packaging
 [Bb]uild/[Pp]ackaging
+
+WSATestCertificate.*
+UnityPackageManager
