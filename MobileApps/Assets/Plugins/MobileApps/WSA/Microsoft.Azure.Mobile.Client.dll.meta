@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00f1cfb461f6f6d4ba0db5b4b3afb72c
+guid: 9eb0691173f48c94ba961c65a5a9411a
 timeCreated: 1512449589
 licenseType: Pro
 PluginImporter:
@@ -29,6 +29,13 @@ PluginImporter:
           Exclude WindowsStoreApps: 0
     data:
       first:
+        Android: Android
+      second:
+        enabled: 0
+        settings:
+          CPU: ARMv7
+    data:
+      first:
         Any: 
       second:
         enabled: 0
@@ -39,7 +46,9 @@ PluginImporter:
       second:
         enabled: 0
         settings:
+          CPU: AnyCPU
           DefaultValueInitialized: true
+          OS: AnyOS
     data:
       first:
         Facebook: Win
@@ -117,6 +126,10 @@ PluginImporter:
         enabled: 1
         settings:
           CPU: AnyCPU
+          DontProcess: False
+          PlaceholderPath: 
+          SDK: AnySDK
+          ScriptingBackend: AnyScriptingBackend
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: f165fd7630f191a4ba798436c07555a8
+  - enabled: 1
+    path: Assets/AzureSamples/MobileApps/AzureMobileApps.unity
+    guid: d4cbf4271ea9e574e8a07a4f4f556f99

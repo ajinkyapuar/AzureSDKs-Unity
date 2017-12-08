@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 05780859b87cb6a44b7b93e8fcab20ee
-timeCreated: 1512449590
+guid: 68b6cbbed9f1f224a98cb9f8195a62f3
+timeCreated: 1512614361
 licenseType: Pro
 PluginImporter:
   serializedVersion: 2
@@ -119,6 +119,12 @@ PluginImporter:
         enabled: 0
         settings:
           CPU: None
+    data:
+      first:
+        WebGL: WebGL
+      second:
+        enabled: 0
+        settings: {}
     data:
       first:
         Windows Store Apps: WindowsStoreApps
