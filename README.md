@@ -7,14 +7,14 @@ Today, we have support for the following SDKs with more coming soon:
 ## [Azure Storage](https://aka.ms/azstoragedocsgamedev)
 
 * [Documentation](https://aka.ms/azstoragegamedev)
-* [Unity SDK](https://github.com/BrianPeek/AzureSamples-Unity/raw/master/UnityPackages/azure-storage-unity-8.6.0.unitypackage)
+* [Unity SDK](https://aka.ms/azstorage-unitysdk)
 
 ## [Azure Mobile Apps](https://aka.ms/azmobileappsdocsgamedev)
 
 * [Documentation](https://aka.ms/azmobileappsgamedev)
-* [Unity SDK](https://github.com/BrianPeek/AzureSamples-Unity/raw/master/UnityPackages/azure-mobile-client-unity-4.0.2.unitypackage)
+* [Unity SDK](https://aka.ms/azmobile-unitysdk)
 
 ## [Azure Event Hubs](https://aka.ms/azeventhubsdocsgamedev)
 
 * [Documentation](https://aka.ms/azeventhubsgamedev)
-* [Unity SDK](https://github.com/BrianPeek/AzureSamples-Unity/raw/master/UnityPackages/azure-event-hubs-1.0.3.unitypackage)
+* [Unity SDK](https://aka.ms/azeventhubs-unitysdk)
