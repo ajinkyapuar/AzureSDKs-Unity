@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Sample/EventHub.unity
+    path: Assets/AzureSamples/EventHubs/EventHub.unity
     guid: d27676d1e5d38f94aad4850c23cd6819
