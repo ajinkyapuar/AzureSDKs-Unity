@@ -551,7 +551,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 00b9d810fb81d401
+  metroCertificateNotAfter: 00c5aedd24b3d401
   metroApplicationDescription: UnitySDK2
   wsaImages: {}
   metroTileShortName: 

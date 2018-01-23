@@ -5,7 +5,9 @@ using Microsoft.ApplicationInsights;
 using System;
 using UnityEngine.SceneManagement;
 using System.Net;
+#if !WINDOWS_UWP
 using System.Security.Cryptography.X509Certificates;
+#endif
 using System.Net.Security;
 
 public class AppInsightsLogger : MonoBehaviour
@@ -39,7 +41,7 @@ public class AppInsightsLogger : MonoBehaviour
 
 
 
-#if !UNITY_WSA
+#if !WINDOWS_UWP
     /// <summary>
     /// Unity's bug that doesn't handle ssl correctly, at least as of v2017.2
     /// </summary>
@@ -51,7 +53,7 @@ public class AppInsightsLogger : MonoBehaviour
             return true;
         }
     }
-#endif
+
 
     public bool CheckValidCertificateCallback(System.Object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
     {
@@ -78,12 +80,12 @@ public class AppInsightsLogger : MonoBehaviour
         }
         return valid;
     }
-
+#endif
     // Use this for initialization
     void Awake()
     {
 
-#if !UNITY_WSA
+#if !WINDOWS_UWP
         //This works, and one of these two options are required as Unity's TLS (SSL) support doesn't currently work like .NET
         //ServicePointManager.CertificatePolicy = new CustomCertificatePolicy();
 

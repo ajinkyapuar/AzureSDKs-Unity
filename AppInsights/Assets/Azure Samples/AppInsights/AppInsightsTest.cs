@@ -29,7 +29,7 @@ public class AppInsightsTest : MonoBehaviour
     {
         var sample = new MetricTelemetry();
         sample.Name = "Some Metric Name";
-        sample.Sum = UnityEngine.Random.Range(1f, 10f);
+        //sample.Sum = UnityEngine.Random.Range(1f, 10f);
         telemetry.TrackMetric(sample);
     }
 
@@ -40,23 +40,23 @@ public class AppInsightsTest : MonoBehaviour
 
     public void TrackRequest()
     {
-        //Typically this is used to track an HttpRequest for web platforms. See using Operation Context
-        //Since an HttpRequest has work associated with it in a single request, this is how you can track work
-        //in a single request.
+        ////Typically this is used to track an HttpRequest for web platforms. See using Operation Context
+        ////Since an HttpRequest has work associated with it in a single request, this is how you can track work
+        ////in a single request.
 
-        // Establish an operation context and associated telemetry item:
-        using (var operation = telemetry.StartOperation<RequestTelemetry>("operationName"))
-        {
-            // Telemetry sent in here will use the same operation ID.
-            telemetry.TrackTrace("Test trace");
+        //// Establish an operation context and associated telemetry item:
+        //using (var operation = telemetry.StartOperation<RequestTelemetry>("operationName"))
+        //{
+        //    // Telemetry sent in here will use the same operation ID.
+        //    telemetry.TrackTrace("Test trace");
 
-            // Set properties of containing telemetry item--for example:
-            operation.Telemetry.ResponseCode = "200";
+        //    // Set properties of containing telemetry item--for example:
+        //    operation.Telemetry.ResponseCode = "200";
 
-            // Optional: explicitly send telemetry item:
-            telemetry.StopOperation(operation);
+        //    // Optional: explicitly send telemetry item:
+        //    telemetry.StopOperation(operation);
 
-        } // When operation is disposed, telemetry item is sent.
+        //} // When operation is disposed, telemetry item is sent.
 
     }
 
