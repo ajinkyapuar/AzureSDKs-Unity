@@ -1,20 +1,24 @@
 @echo off
 
-REM Set paths
-set storagedir=..\..\azure-storage-net
-set sampledir=..\Storage
-set unityexe="C:\Program Files\Unity\Editor\Unity.exe"
-set version=8.6.0
+REM Set vars
+set sdk=Storage
+set version=9.1.1
+set jsonversion=11.0.2
+set packagename=azure-storage-unity
 
-REM Build Release binaries
-msbuild %storagedir%\Lib\Unity\Microsoft.WindowsAzure.Storage.Unity.csproj /t:Rebuild /p:Configuration=Release
-msbuild %storagedir%\Lib\WindowsRuntime\Microsoft.WindowsAzure.Storage.RT.csproj /t:Rebuild /p:Configuration=Release
+call _pre.bat UWP
 
-REM Copy binaries to sample
-copy /y %storagedir%\Lib\Unity\bin\Release\*.dll %sampledir%\Assets\Plugins\Storage
-copy /y %storagedir%\Lib\WindowsRuntime\bin\Release\*.dll %sampledir%\Assets\Plugins\Storage\WSA
+REM install the package
+nuget install WindowsAzure.Storage -Version %version% -OutputDirectory %nugetdir%
+nuget install Newtonsoft.Json -Version %jsonversion% -OutputDirectory %nugetdir%
+nuget install Newtonsoft.Json -Version 10.0.2 -OutputDirectory %nugetdir%
+nuget install System.Runtime.Serialization.Primitives -Version 4.3.0 -OutputDirectory %nugetdir%
 
-REM Package
-%unityexe% -batchmode -projectPath %cd%\%sampledir% -exportPackage Assets %cd%\..\UnityPackages\azure-storage-unity-%version%.unitypackage -quit
+REM copy the proper DLLs to the package directory
+copy /y "%nugetdir%\WindowsAzure.Storage.%version%\lib\netstandard1.3\Microsoft.WindowsAzure.Storage.dll" %sampledir%\Assets\Plugins\%sdk%
+copy /y "%nugetdir%\Newtonsoft.Json.%jsonversion%\lib\netstandard2.0\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%
 
-echo "Packaging complete."
+copy /y "%nugetdir%\WindowsAzure.Storage.%version%\lib\win8\Microsoft.WindowsAzure.Storage.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
+copy /y "%nugetdir%\Newtonsoft.Json.10.0.2\lib\portable-net45+win8+wpa81+wp8\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
+
+call _post.bat
