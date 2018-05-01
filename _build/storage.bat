@@ -1,7 +1,7 @@
 @echo off
 
 REM Set vars
-set sdk=Storage
+set sdk=WindowsAzure.Storage
 set version=9.1.1
 set jsonversion=11.0.2
 set packagename=azure-storage-unity
