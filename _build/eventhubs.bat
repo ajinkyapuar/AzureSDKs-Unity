@@ -1,7 +1,7 @@
 @echo off
 
 REM Set vars
-set sdk=EventHubs
+set sdk=Microsoft.Azure.EventHubs
 set version=2.0.0
 set appauthversion=1.1.0-preview
 set jsonversion=11.0.2
