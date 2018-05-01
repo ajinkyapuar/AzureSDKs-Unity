@@ -15,10 +15,10 @@ nuget install System.Security.Cryptography.Algorithms -Version 4.2.0 -OutputDire
 
 REM copy the proper DLLs to the package directory
 copy /y "%nugetdir%\Microsoft.Azure.Mobile.Client.%version%\lib\netstandard1.4\Microsoft.Azure.Mobile.Client.dll" %sampledir%\Assets\Plugins\%sdk%
-copy /y "%nugetdir%\Newtonsoft.Json.%jsonversion%\lib\netstandard2.0\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%
+copy /y "%nugetdir%\Newtonsoft.Json.%jsonversion%\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%
 
 copy /y "%nugetdir%\Microsoft.Azure.Mobile.Client.%version%\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
-copy /y "%nugetdir%\Newtonsoft.Json.9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
+copy /y "%nugetdir%\Newtonsoft.Json.%jsonversion%\lib\netstandard1.0\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
 copy /y "%nugetdir%\System.Security.Cryptography.Algorithms.4.2.0\runtimes\win\lib\netcore50\System.Security.Cryptography.Algorithms.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
 copy /y "%nugetdir%\System.Security.Cryptography.Encoding.4.0.0\runtimes\win\lib\netstandard1.3\System.Security.Cryptography.Encoding.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
 copy /y "%nugetdir%\System.Security.Cryptography.Primitives.4.0.0\lib\netstandard1.3\System.Security.Cryptography.Primitives.dll" %sampledir%\Assets\Plugins\%sdk%\WSA

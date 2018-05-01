@@ -13,8 +13,6 @@ REM install the packages
 nuget install Microsoft.Azure.EventHubs -Version %version% -OutputDirectory %nugetdir%
 nuget install Microsoft.Azure.Services.AppAuthentication -Version %appauthversion% -OutputDirectory %nugetdir%
 nuget install Newtonsoft.Json -Version %jsonversion% -OutputDirectory %nugetdir%
-nuget install System.Security.Cryptography.Algorithms -Version 4.3.0 -OutputDirectory %nugetdir%
-nuget install System.Security.Cryptography.Primitives -Version 4.3.0 -OutputDirectory %nugetdir%
 
 REM copy the proper DLLs to the package directory
 copy /y "%nugetdir%\Microsoft.Azure.EventHubs.%version%\lib\netstandard2.0\Microsoft.Azure.EventHubs.dll" %sampledir%\Assets\Plugins\%sdk%
@@ -26,7 +24,7 @@ copy /y "%nugetdir%\Microsoft.Azure.Services.AppAuthentication.%appauthversion%\
 copy /y "%nugetdir%\System.IdentityModel.Tokens.Jwt.5.2.1\lib\netstandard1.4\System.IdentityModel.Tokens.Jwt.dll" %sampledir%\Assets\Plugins\%sdk%
 copy /y "%nugetdir%\Microsoft.IdentityModel.Tokens.5.2.1\lib\netstandard1.4\Microsoft.IdentityModel.Tokens.dll" %sampledir%\Assets\Plugins\%sdk%
 copy /y "%nugetdir%\Microsoft.IdentityModel.Logging.5.2.1\lib\netstandard1.4\Microsoft.IdentityModel.Logging.dll" %sampledir%\Assets\Plugins\%sdk%
-copy /y "%nugetdir%\Newtonsoft.Json.%jsonversion%\lib\netstandard2.0\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%
+copy /y "%nugetdir%\Newtonsoft.Json.%jsonversion%\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll" %sampledir%\Assets\Plugins\%sdk%
 
 copy /y "%nugetdir%\Microsoft.Azure.EventHubs.%version%\lib\uap10.0\Microsoft.Azure.EventHubs.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
 copy /y "%nugetdir%\Microsoft.Azure.Amqp.2.2.0\lib\uap10.0\Microsoft.Azure.Amqp.dll" %sampledir%\Assets\Plugins\%sdk%\WSA
