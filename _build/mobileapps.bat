@@ -1,7 +1,7 @@
 @echo off
 
 REM Set vars
-set sdk=MobileApps
+set sdk=Microsoft.Azure.Mobile.Client
 set version=4.0.2
 set jsonversion=11.0.2
 set packagename=azure-mobile-client-unity
