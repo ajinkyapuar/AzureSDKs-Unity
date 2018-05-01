@@ -627,7 +627,7 @@ PlayerSettings:
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 8078f6f21eecd401
+  metroCertificateNotAfter: 00d442d81100d501
   metroApplicationDescription: AzureMobileApps
   wsaImages: {}
   metroTileShortName: 
@@ -692,6 +692,7 @@ PlayerSettings:
   XboxOneGameOsOverridePath: 
   XboxOnePackagingOverridePath: 
   XboxOneAppManifestOverridePath: 
+  XboxOneVersion: 1.0.0.0
   XboxOnePackageEncryption: 0
   XboxOnePackageUpdateGranularity: 2
   XboxOneDescription: 
