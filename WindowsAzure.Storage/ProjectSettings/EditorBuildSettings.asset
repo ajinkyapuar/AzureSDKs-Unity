@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AzureSamples/Storage/AzureStorage.unity
+    path: Assets/AzureSamples/WindowsAzure.Storage/AzureStorage.unity
     guid: d4cbf4271ea9e574e8a07a4f4f556f99
   m_configObjects: {}
