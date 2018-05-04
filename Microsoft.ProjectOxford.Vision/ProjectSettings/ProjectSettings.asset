@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: EventHubs
+  productName: ComputerVision
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -650,16 +650,16 @@ PlayerSettings:
     Standalone: 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: EventHubs
+  metroPackageName: ComputerVision
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: Assets\WSATestCertificate.pfx
+  metroCertificatePath: C:\Projects\Microsoft\GameDev\AzureSDKs-Unity\Microsoft.ProjectOxford.Vision\Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
-  metroCertificateNotAfter: 003f5b9c1000d501
-  metroApplicationDescription: EventHubs
+  metroCertificateNotAfter: 808d4175ee02d501
+  metroApplicationDescription: ComputerVision
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: ComputerVision
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
