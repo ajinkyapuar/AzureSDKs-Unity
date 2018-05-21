@@ -47,11 +47,12 @@ public class VisionTest : BaseVision
 			IRandomAccessStreamWithContentType ras = await sf.OpenReadAsync();
 			s = ras.AsStreamForRead();
 #else
-			s = new FileStream(Path.Combine(Application.streamingAssetsPath, ImageToUpload), FileMode.Open);
+			s = File.OpenRead(Path.Combine(Application.streamingAssetsPath, ImageToUpload));
 #endif
 
 			VisionServiceClient client = new VisionServiceClient(VisionKey, VisionEndpoint);
 			AnalysisResult result = await client.DescribeAsync(s);
+			s.Close();
 			WriteOutput(result);
 		}
 		catch (ClientException ex)
