@@ -6,7 +6,6 @@
 	<assembly fullname="Microsoft.Azure.EventHubs" preserve="all" />
 	<assembly fullname="Microsoft.Azure.Services.AppAuthentication" preserve="all" />
 	<assembly fullname="Microsoft.IdentityModel.Clients.ActiveDirectory" preserve="all" />
-	<assembly fullname="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform" preserve="all" />
 	<assembly fullname="Microsoft.IdentityModel.JsonWebTokens" preserve="all" />
 	<assembly fullname="Microsoft.IdentityModel.Logging" preserve="all" />
 	<assembly fullname="Microsoft.IdentityModel.Tokens" preserve="all" />
