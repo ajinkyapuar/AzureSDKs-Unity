@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class BaseEventHubs : MonoBehaviour
 {
-    public string EhConnectionString;
-    public string EhEntityPath;
+	public string EhConnectionString;
+	public string EhEntityPath;
 
-    private Text _myText;
+	private Text _myText;
 
 	// Use this for initialization
 	void Start ()
