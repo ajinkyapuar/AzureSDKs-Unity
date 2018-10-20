@@ -1,0 +1,3 @@
+<linker>
+    <assembly fullname="Microsoft.Azure.Amqp" preserve="all"/>
+</linker>

@@ -1,0 +1,17 @@
+<linker>
+	<assembly fullname="System.Core">
+		<type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
+	</assembly>
+	<assembly fullname="Microsoft.Azure.Amqp" preserve="all" />
+	<assembly fullname="Microsoft.Azure.EventHubs" preserve="all" />
+	<assembly fullname="Microsoft.Azure.Services.AppAuthentication" preserve="all" />
+	<assembly fullname="Microsoft.CSharp" preserve="all" />
+	<assembly fullname="Microsoft.IdentityModel.Clients.ActiveDirectory" preserve="all" />
+	<assembly fullname="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform" preserve="all" />
+	<assembly fullname="Microsoft.IdentityModel.JsonWebTokens" preserve="all" />
+	<assembly fullname="Microsoft.IdentityModel.Logging" preserve="all" />
+	<assembly fullname="Microsoft.IdentityModel.Tokens" preserve="all" />
+	<assembly fullname="Newtonsoft.Json" preserve="all" />
+	<assembly fullname="System.Diagnostics.DiagnosticSource" preserve="all" />
+	<assembly fullname="System.IdentityModel.Tokens.Jwt" preserve="all" />
+</linker>

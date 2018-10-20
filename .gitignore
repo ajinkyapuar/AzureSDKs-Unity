@@ -303,3 +303,6 @@ sysinfo.txt
 
 WSATestCertificate.*
 UnityPackageManager
+
+.DS_Store
+UWP/
