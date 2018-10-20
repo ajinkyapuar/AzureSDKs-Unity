@@ -1,6 +1,6 @@
 # Azure SDKs and Samples for Unity
 
-This is a series of experimenal Unity SDKs, samples, and documentation for using [Azure Services](https://aka.ms/azfreegamedev) with Unity 2017.1 or greater.
+This is a series of experimenal Unity SDKs, samples, and documentation for using [Azure Services](https://aka.ms/azfreegamedev) with Unity 2018.2 (or greater) thanks to Unity's support of .NET Standard and SSL/TLS fixes.
 
 Today, we have support for the following SDKs with more coming soon:
 
@@ -18,3 +18,5 @@ Today, we have support for the following SDKs with more coming soon:
 
 * [Documentation](https://aka.ms/azeventhubsgamedev)
 * [Unity SDK](https://aka.ms/azeventhubs-unitysdk)
+
+These packages are built with my [NuGet2Unity](https://github.com/BrianPeek/NuGet2Unity) packaging tool.
