@@ -480,7 +480,6 @@ GameObject:
   m_Component:
   - component: {fileID: 345904739}
   - component: {fileID: 345904738}
-  - component: {fileID: 345904737}
   - component: {fileID: 345904736}
   - component: {fileID: 345904735}
   m_Layer: 0
@@ -498,13 +497,6 @@ AudioListener:
   m_GameObject: {fileID: 345904734}
   m_Enabled: 1
 --- !u!124 &345904736
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 345904734}
-  m_Enabled: 1
---- !u!92 &345904737
 Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -784,7 +776,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1341252707}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1635,7 +1627,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 456729184}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99142367
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

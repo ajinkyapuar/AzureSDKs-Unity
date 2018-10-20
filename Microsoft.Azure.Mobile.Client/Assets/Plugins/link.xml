@@ -3,4 +3,6 @@
 		<type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
 	</assembly>
 	<assembly fullname="Microsoft.Azure.Mobile.Client" preserve="all" />
+	<assembly fullname="Microsoft.CSharp" preserve="all" />
+	<assembly fullname="Newtonsoft.Json" preserve="all" />
 </linker>
