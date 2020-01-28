@@ -1,6 +1,6 @@
 # Azure SDKs and Samples for Unity
 
-## This project is no longer under active development
+### This project is no longer under active development
 
 This is a series of experimenal Unity SDKs, samples, and documentation for using [Azure Services](https://aka.ms/azfreegamedev) with Unity 2017 or 2018 thanks to Unity's support of .NET Standard and SSL/TLS fixes.
 
